@@ -1,21 +1,82 @@
+/* General Styles */
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
+  margin: 50px;
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
   min-height: 95vh;
-}
-.main {
-  flex: 1;
 }
 
 h1 {
   font-size: 5rem;
 }
 
+/* Main Section */
+.main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Add gap between cards */
+}
+
+/* Footer */
 footer {
-  text-align: right;
+  text-align: center;
   color: midnightblue;
 }
 
+/* Title Image */
+.title-image {
+  height: 200px;
+  margin-right: 50px;
+  float: left;
+}
+
+/* Card */
+.card {
+  width: 45%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  margin-bottom: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+
+  body {
+    margin: 20px;
+  }
+
+  div {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
